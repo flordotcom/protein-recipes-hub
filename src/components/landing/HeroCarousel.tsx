@@ -35,8 +35,9 @@ export function HeroCarousel() {
         <AnimatePresence mode="wait">
           <motion.img
             key={index}
-            src={slides[index].src}
-            alt={slides[index].alt}
+            src={slides[index]!.src}
+            alt={slides[index]!.alt}
+
             width={800}
             height={800}
             initial={{ opacity: 0, scale: 1.04 }}
