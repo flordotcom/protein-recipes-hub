@@ -31,7 +31,7 @@ export function Hero() {
           </p>
 
           <div className="mx-auto mt-7 max-w-md lg:mx-0">
-            <CtaButton>¡Quiero el acceso inmediato al recetario!</CtaButton>
+            <CtaButton>QUIERO EMPEZAR AHORA</CtaButton>
             <PaymentBadges />
           </div>
         </motion.div>
