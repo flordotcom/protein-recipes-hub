@@ -9,11 +9,8 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl font-black leading-[1.1] tracking-tight sm:text-5xl lg:text-[56px]">
-            <span className="text-primary">
-              365 recetas económicas con proteínas para ahorrar
-            </span>{" "}
-            <span className="text-gold">dinero</span>
+          <h1 className="text-4xl font-black leading-[1.1] tracking-tight sm:text-5xl lg:text-[56px] bg-gradient-to-r from-primary via-[#8A9A40] to-gold bg-clip-text text-transparent">
+            365 recetas económicas con proteínas para ahorrar dinero
           </h1>
 
           <h2 className="mt-6 text-2xl font-black tracking-tight text-foreground sm:text-3xl lg:text-4xl">
