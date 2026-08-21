@@ -1,47 +1,28 @@
 import { motion } from "framer-motion";
-import { Flame } from "lucide-react";
-import { HeroCarousel } from "./HeroCarousel";
-import { CtaButton, PaymentBadges } from "./CtaButton";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background px-4 pb-14 pt-8 sm:pt-12">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2">
+    <section className="relative overflow-hidden bg-background px-4 pb-14 pt-12 sm:pt-16">
+      <div className="mx-auto max-w-4xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center lg:text-left"
         >
-          <span className="inline-flex items-center gap-2 rounded-full border-2 border-primary bg-success-soft px-4 py-1.5 text-[11px] font-bold uppercase tracking-wide text-foreground sm:text-xs">
-            <Flame className="h-4 w-4 text-gold" />
-            Más de 15.000 personas ya lograron su cambio
-          </span>
-
-          <h1 className="mt-5 text-3xl font-black uppercase leading-[1.08] tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-            <span className="rounded-lg bg-primary px-2 py-0.5 text-primary-foreground">
-              365 recetas proteicas
+          <h1 className="text-4xl font-black leading-[1.1] tracking-tight sm:text-5xl lg:text-[56px]">
+            <span className="text-primary">
+              365 recetas económicas con proteínas para ahorrar
             </span>{" "}
-            fáciles, deliciosas y económicas para ganar masa muscular y perder grasa
+            <span className="text-gold">dinero</span>
           </h1>
 
-          <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg lg:mx-0">
-            Transforma tu cuerpo comiendo lo que te gusta: sin pasar hambre, sin pollo seco con
-            brócoli y sin gastar horas en la cocina.
+          <h2 className="mt-6 text-2xl font-black tracking-tight text-foreground sm:text-3xl lg:text-4xl">
+            Sin sacrificar el sabor.
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl text-sm font-medium text-muted-foreground sm:text-base">
+            Recetas prácticas ricas en proteínas para una alimentación saludable diaria.
           </p>
-
-          <div className="mx-auto mt-7 max-w-md lg:mx-0">
-            <CtaButton>QUIERO EMPEZAR AHORA</CtaButton>
-            <PaymentBadges />
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-        >
-          <HeroCarousel />
         </motion.div>
       </div>
     </section>
